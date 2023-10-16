@@ -1,0 +1,32 @@
+
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.dXNlcjE.8DtTM07SJnzZV2xz4r0215yqvqnVw6ulZFu7QoZLdGY
+###
+POST http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.dXNlcjE.8DtTM07SJnzZV2xz4r0215yqvqnVw6ulZFu7QoZLdGY
+Content-Type: application/json
+
+{
+    "post":"some text post222"
+}
+###
+GET http://localhost:3000/posts/f8f3af81-edf3-4635-98a2-676b30f26493
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.dXNlcjE.8DtTM07SJnzZV2xz4r0215yqvqnVw6ulZFu7QoZLdGY
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "pass1"
+}
+
+###
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "pass1"
+}
